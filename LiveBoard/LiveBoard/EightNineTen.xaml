@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LiveBoard"
+             x:Class="LiveBoard.EightNineTen"
+             Title="8/9/10 Ball">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label 
+              
+               Text=" eoeoooo ladjb"
+               Grid.Row="0" Grid.Column="0"
+               BackgroundColor="White"
+               TextColor="Black"
+              />
+        <Label Text="Autosized cell"
+               Grid.Row="0" Grid.Column="1"
+               TextColor="White"
+               FontSize="Caption"
+               BackgroundColor="White" />
+
+        <Label 
+              x:Name="MalSchauen" 
+            Text="Platzhalter"
+               Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+               BackgroundColor="White"
+               TextColor="Black"
+               />
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Heim" Grid.ColumnSpan="2"
+               Grid.Row="0" Grid.Column="0"
+               BackgroundColor="White"
+               TextColor="Black"
+                   FontSize="44"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+              />
+            <Button 
+                x:Name="PlayerO"
+                Clicked="PlayerO_Clicked"
+                Text="0"
+                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                BackgroundColor="White" BorderWidth="0" >
+            </Button>
+
+            <Button 
+                Text=" "
+                TextColor="White" 
+                Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+                BackgroundColor="White" IsEnabled="False" BorderWidth="0"  
+                
+               
+               />
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Gast" Grid.ColumnSpan="2"
+               Grid.Row="0" Grid.Column="0"
+               BackgroundColor="White"
+               TextColor="Black"
+                          FontSize="44"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+              />
+
+            <Button 
+                x:Name="PlayerT"
+                Clicked="PlayerT_Clicked"
+                Text="0"
+                    
+                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                BackgroundColor="White">
+            </Button>
+
+            <Button 
+                Text="undo"
+                TextColor="Black" 
+                Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+                BackgroundColor="White"
+                x:Name="Undo"
+                Clicked="Undo_Clicked" ImageSource="C:\Users\micha\Pictures\Camera Roll\25249.png"   
+               />
+        </Grid>
+    </Grid>
+</ContentPage>

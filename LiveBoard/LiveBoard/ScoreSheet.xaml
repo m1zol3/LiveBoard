@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:local="clr-namespace:LiveBoard"
+             Title="Scoring Sheet"
+             HeightRequest="-1"
+             x:Class="LiveBoard.ScoreSheet" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <!-- -->
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label
+             Text="Platzhalter" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="21"
+               BackgroundColor="White"
+               TextColor="Black"
+            ></Label>
+        <Label 
+               Text="0/0"
+               Grid.Row="1" Grid.Column="0"
+               BackgroundColor="Black"
+               TextColor="Black"
+              />
+        <Label 
+               Text="0/1"
+               Grid.Row="1" Grid.Column="1"
+               BackgroundColor="Blue"
+               TextColor="Blue"
+              />
+
+        <Label x:Name="Heim"
+               Text="Heim" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="7"
+               BackgroundColor="White"
+               TextColor="Black"
+              />
+
+        <Label x:Name="Satz"
+               Text="0:0" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               Grid.Row="1" Grid.Column="9" Grid.ColumnSpan="4"
+               BackgroundColor="White"
+               TextColor="Black"
+              />
+
+        <Label x:Name="Gast"
+               Text="Gast" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               Grid.Row="1" Grid.Column="13"  Grid.ColumnSpan="7"
+               BackgroundColor="White"
+               TextColor="Black"
+              />
+
+        <Label 
+               Text="0/4"
+               Grid.Row="1" Grid.Column="20"
+               BackgroundColor="Black"
+               TextColor="Black"
+              />
+        <Frame  Grid.Row="1" Grid.Column="21"  BackgroundColor="Yellow" Padding="0" Margin="0" >
+            <Frame     BackgroundColor="Blue" Padding="0" Margin="0"
+                x:Name="MeinLabel" CornerRadius="40"  >
+                <Label Text="NA?" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+            </Frame>
+        </Frame>
+        <Button x:Name="PlayerOne" Clicked="PlayerOne_Clicked"
+             Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="8" Grid.RowSpan="8"
+              Text="0" TextColor="Black" FontSize="240" BackgroundColor="White" 
+            ></Button>
+        <Button x:Name="PlayerTwo" Clicked="PlayerTwo_Clicked"
+             Grid.Row="2" Grid.Column="13" Grid.ColumnSpan="8" Grid.RowSpan="8"  
+              Text="0" TextColor="Black" FontSize="240" BackgroundColor="White"
+            ></Button>
+
+        <ImageButton x:Name="Undo" Grid.Row="11" Grid.Column="20" Source="undo2.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="ImageButton_Clicked"></ImageButton>
+    </Grid>
+</ContentPage>

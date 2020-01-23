@@ -25,7 +25,12 @@ namespace LiveBoard
             {
 
                  new PageDataViewModel(typeof(EightNineTen), "Anstoss Spiele",
-                                      "Ligaspiele 8/9/10 Ball (Testversion)")
+                                      "Ligaspiele 8/9/10 Ball (Testversion)"),
+                 new PageDataViewModel(typeof(ScoreSheet),"Scoring Sheet","Beta Version")
+                 ,
+                 new PageDataViewModel(typeof(Page1),"Image BUtton Sheet","Beta Version"),
+                  new PageDataViewModel(typeof(MyTab), "Test 1",
+                                      "Kartei")
 /*
                 new PageDataViewModel(typeof(MyView), "8/9/10 Ball",
                                       "Interact with a Slider and Button"),

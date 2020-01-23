@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -84,14 +84,21 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\LiveBoard\LiveBoard.csproj">
       <Project>{7D2EC390-A070-4EDC-A0EE-A4BF1FFC01D1}</Project>
       <Name>LiveBoard</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\undo1.jpg" />
+    <AndroidResource Include="Resources\drawable\undo.png" />
+    <AndroidResource Include="Resources\drawable\undo2.png" />
+    <Content Include="Resources\drawable\XamarinLogo.png" />
+    <Content Include="Resources\mipmap-hdpi\undo1.jpg" />
+    <Content Include="Resources\mipmap-mdpi\undo1.jpg" />
+    <Content Include="XamarinLogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

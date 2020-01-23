@@ -106,7 +106,7 @@
                 Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
                 BackgroundColor="White"
                 x:Name="Undo"
-                Clicked="Undo_Clicked" ImageSource="C:\Users\micha\Pictures\Camera Roll\25249.png"   
+                Clicked="Undo_Clicked"  
                />
         </Grid>
     </Grid>

@@ -132,4 +132,7 @@
       <Name>LiveBoard</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="undo1.jpg" />
+  </ItemGroup>
 </Project>

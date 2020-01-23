@@ -12,7 +12,7 @@ namespace LiveBoard
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EightNineTen : ContentPage
     {
-        int PlayerOne = 0;
+        int PlayerOne = 97;
         int PlayerTwo = 0;
         List<MyUndo> MyThisUndo = new List<MyUndo> { };
         public EightNineTen()
@@ -74,6 +74,8 @@ namespace LiveBoard
                 MyThisUndo.RemoveAt(MyThisUndo.Count - 1);
                 if (MyThisUndo.Count == 0)
                     Undo.IsEnabled = false;
+                MalSchauen.Text = MyThisUndo.Count.ToString();
+                //Jetzt schreibe meine Liste neu!
             }
         }
     }

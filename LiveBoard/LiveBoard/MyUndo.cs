@@ -14,5 +14,6 @@ namespace LiveBoard
         }
         public int Id { get; set; }
         public int Zahl { get; set; }
+        
     }
 }

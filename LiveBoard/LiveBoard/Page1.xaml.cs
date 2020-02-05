@@ -12,31 +12,29 @@ namespace LiveBoard
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page1 : ContentPage
     {
+        List<Distanz> MyDistanz = new List<Distanz> { };
         public Page1()
         {
-          
-            Label header = new Label
-            {
-                Text = "ImageButton",
-                FontSize = 50,
-                FontAttributes = FontAttributes.Bold,
-                HorizontalOptions = LayoutOptions.Center
-            };
-
-            ImageButton imageButton = new ImageButton
-            {
-                Source = "images/XamarinLogo.png",
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.CenterAndExpand
-            };
-
-            // Build the page.
-            Title = "ImageButton Demo";
-            Content = new StackLayout
-            {
-                Children = { header, imageButton }
-            };
+         
             InitializeComponent();
+
+        }
+
+        async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+
+
+
+
+        
+            MyDistanz.Add(new Distanz() { WeiteA = 10, WeiteB = 9 });
+            
+
+
+       
+           
+          await Navigation.PushAsync(new ScoreSheet(MyDistanz.ElementAt(0).WeiteA, MyDistanz.ElementAt(0).WeiteB)); 
+
         }
     }
 }

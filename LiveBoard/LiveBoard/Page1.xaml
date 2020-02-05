@@ -9,7 +9,7 @@
         <StackLayout>
 
 
-            <ImageButton Source="undo1.jpg"
+            <ImageButton Source="kat02nr05.png" Clicked="ImageButton_Clicked"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     />

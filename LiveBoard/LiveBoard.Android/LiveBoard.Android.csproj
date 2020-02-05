@@ -53,6 +53,15 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="SkiaSharp">
+      <Version>1.68.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Views">
+      <Version>1.68.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Views.Forms">
+      <Version>1.68.1.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
@@ -96,6 +105,7 @@
     <AndroidResource Include="Resources\drawable\undo.png" />
     <AndroidResource Include="Resources\drawable\undo2.png" />
     <Content Include="Resources\drawable\XamarinLogo.png" />
+    <AndroidResource Include="Resources\drawable\kat02nr05.png" />
     <Content Include="Resources\mipmap-hdpi\undo1.jpg" />
     <Content Include="Resources\mipmap-mdpi\undo1.jpg" />
     <Content Include="XamarinLogo.png" />

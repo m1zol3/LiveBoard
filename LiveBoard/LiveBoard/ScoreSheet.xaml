@@ -44,9 +44,10 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Label
+        <Button Grid.Row="0" Grid.Column="0" Text="neu" Grid.ColumnSpan="2" x:Name="NewGame" Clicked="NewGame_Clicked"></Button>
+        <Label x:Name="MeineWeite"
              Text="Platzhalter" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
-               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="21"
+               Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="4"
                BackgroundColor="White"
                TextColor="Black"
             ></Label>
@@ -56,18 +57,19 @@
                BackgroundColor="Black"
                TextColor="Black"
               />
-        <Label 
+        <!--Label 
                Text="0/1"
                Grid.Row="1" Grid.Column="1"
                BackgroundColor="Blue"
                TextColor="Blue"
-              />
+              /-->
 
         <Label x:Name="Heim"
                Text="Heim" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
-               Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="7"
+               Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="8"
                BackgroundColor="White"
                TextColor="Black"
+              
               />
 
         <Label x:Name="Satz"
@@ -79,15 +81,19 @@
 
         <Label x:Name="Gast"
                Text="Gast" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
-               Grid.Row="1" Grid.Column="13"  Grid.ColumnSpan="7"
+               Grid.Row="1" Grid.Column="13"  Grid.ColumnSpan="8"
                BackgroundColor="White"
                TextColor="Black"
-              />
+              >
+             
+            
+        </Label>
 
-        <Label 
-               Text="0/4"
+        <Label x:Name="Geht"
+               Text="{Binding a}"
+               
                Grid.Row="1" Grid.Column="20"
-               BackgroundColor="Black"
+               BackgroundColor="White"
                TextColor="Black"
               />
         <Frame  Grid.Row="1" Grid.Column="21"  BackgroundColor="Yellow" Padding="0" Margin="0" >
@@ -107,5 +113,7 @@
             ></Button>
 
         <ImageButton x:Name="Undo" Grid.Row="11" Grid.Column="20" Source="undo2.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="ImageButton_Clicked"></ImageButton>
+    
     </Grid>
+    
 </ContentPage>

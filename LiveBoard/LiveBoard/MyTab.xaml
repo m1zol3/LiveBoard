@@ -8,6 +8,10 @@
   <!--Pages can be added as references or inline-->
   <ContentPage Title="Einstellungen" >
         <Button Text="Hallo"></Button>     
-  </ContentPage>  <ContentPage Title="Tab 2" />
-  <ContentPage Title="Tab 3" />
+  </ContentPage>
+    <ContentPage Title="Tab 2" >
+        
+       
+    </ContentPage>
+    <ContentPage Title="Tab 3" />
 </TabbedPage>

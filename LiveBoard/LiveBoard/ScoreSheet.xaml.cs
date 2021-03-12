@@ -19,21 +19,21 @@ namespace LiveBoard
         {
             InitializeComponent();
             // Geht.SetBinding(Label.TextProperty, "a");
-           // MyThisUndo.Add(new MyUndo() { Id = 1, Zahl = PlayerOneScore });
+          MyThisUndo.Add(new MyUndo() { Id = 1, Zahl = PlayerOneScore });
             MyThisUndo.Add(new MyUndo() { Id = 2, Zahl = PlayerTwoScore });
             PlayerOne.Text = PlayerOneScore.ToString();
             PlayerTwo.Text = PlayerTwoScore.ToString();
-           // MeineWeite.Text = MyThisUndo.Count.ToString();
-            PlayerWeite = 5;
-
+            //int indexOfSigma = unicodeString.IndexOf('\u03a3');
+            PlayerWeite = int.MaxValue;
+            MeineWeite.Text = "Race to: ∞" + PlayerWeite.ToString();
+       
         }
 
         public ScoreSheet(int data, int dataB)
         {
             InitializeComponent();
-            // Geht.SetBinding(Label.TextProperty, "a");
-           // MeineWeite.Text = MyThisUndo.Count.ToString();
-           // MyThisUndo.Add(new MyUndo() { Id = 1, Zahl = PlayerOneScore });
+          
+           MyThisUndo.Add(new MyUndo() { Id = 1, Zahl = PlayerOneScore });
             MyThisUndo.Add(new MyUndo() { Id = 2, Zahl = PlayerTwoScore });
             int a = dataB;
                // Gast.Text = a.ToString();
@@ -47,7 +47,7 @@ namespace LiveBoard
             MyThisUndo.Add(new MyUndo() { Id = 1, Zahl = PlayerOneScore });
 
             PlayerOneScore++;
-           // if (PlayerOneScore > 99) PlayerOne.FontSize = 200;
+          
             PlayerOne.Text = PlayerOneScore.ToString();
            
            // MeineWeite.Text = MyThisUndo.Count.ToString();
@@ -156,6 +156,42 @@ namespace LiveBoard
             PlayerTwo.Text = PlayerTwoScore.ToString();
             MyThisUndo.Clear();
 
+        }
+
+   
+
+        async void Heim_Clicked(object sender, EventArgs e)
+        {
+           
+            switch (Device.RuntimePlatform)
+            {
+                case Device.Android:
+                    {
+                        string result = await DisplayPromptAsync("Player 1", "What's your name?");
+                        if (!string.IsNullOrWhiteSpace(result))
+                        {
+                            Heim.Text = result;
+
+                        }
+                    }
+                    break;
+
+                case Device.UWP:
+                    MeineWeite.Text = "UWP noch nicht bereit";
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        async void Gast_Clicked(object sender, EventArgs e)
+        {
+            string result = await DisplayPromptAsync("Player 2", "What's your name?");
+            if (!string.IsNullOrWhiteSpace(result))
+            {
+                Gast.Text = result;
+
+            }
         }
 
         public bool CheckWin(int a)

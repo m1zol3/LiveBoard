@@ -45,6 +45,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Button Grid.Row="0" Grid.Column="0" Text="neu" Grid.ColumnSpan="2" x:Name="NewGame" Clicked="NewGame_Clicked"></Button>
+         
         <Label x:Name="MeineWeite"
              Text="Platzhalter" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
                Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="4"
@@ -64,8 +65,9 @@
                TextColor="Blue"
               /-->
 
-        <Label x:Name="Heim"
-               Text="Heim" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+        <Button x:Name="Heim"
+               Text="Heim" FontSize="Large"  
+                Clicked="Heim_Clicked"
                Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="8"
                BackgroundColor="White"
                TextColor="Black"
@@ -79,15 +81,15 @@
                TextColor="Black"
               />
 
-        <Label x:Name="Gast"
-               Text="Gast" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+        <Button x:Name="Gast" Clicked="Gast_Clicked"
+               Text="Gast" FontSize="Large"
                Grid.Row="1" Grid.Column="13"  Grid.ColumnSpan="8"
                BackgroundColor="White"
                TextColor="Black"
               >
              
             
-        </Label>
+        </Button>
 
         <Label x:Name="Geht"
                Text="{Binding a}"

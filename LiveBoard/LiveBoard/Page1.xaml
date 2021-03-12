@@ -13,8 +13,10 @@
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     />
-
- 
+            <Button Text="Kreisliga" Clicked="Kreisliga_Clicked"/>
+            <Button Text="Bezirksliga" Clicked="Bezirksliga_Clicked"/>
+            <Button Text="Landesliga" Clicked="Landesliga_Clicked"/>
+            <Button Text="Verbandsliga" Clicked="Verbandsliga_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

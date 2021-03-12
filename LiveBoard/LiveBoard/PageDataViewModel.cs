@@ -28,17 +28,18 @@ namespace LiveBoard
                                       "Ligaspiele 8/9/10 Ball (Testversion)"),
                  new PageDataViewModel(typeof(ScoreSheet),"Scoring Sheet","Beta Version")
                  ,
-                 new PageDataViewModel(typeof(Page1),"Image BUtton Sheet","Beta Version"),
+                 new PageDataViewModel(typeof(Page1),"Image Button Sheet","Beta Version"),
                   new PageDataViewModel(typeof(MyTab), "Test 1",
-                                      "Kartei")
-/*
-                new PageDataViewModel(typeof(MyView), "8/9/10 Ball",
+                                      "Kartei"),
+                   new PageDataViewModel(typeof(MySkiaSharp), "Zeichnen",  "Linie"),
+
+                new PageDataViewModel(typeof(MonkeyMoustachePage), "8/9/10 Ball",
                                       "Interact with a Slider and Button"),
-                new PageDataViewModel(typeof(Neunball), "Neunball",
-                                      "Interact with a Slider and Button"),
-                new PageDataViewModel(typeof(Straightpool), "14/1 Zettel",
-                                       "Bis jetzt erstmal eine Testversion")
-*/
+               new PageDataViewModel(typeof(MySets), "Settings",
+                                      "Pool Settings Global")  ,
+                new PageDataViewModel(typeof(Practice), "Übungen",
+                                       "Testversion")
+ 
 
             };
         }

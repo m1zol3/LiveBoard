@@ -11,32 +11,102 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\Image1.png" />
+    <None Remove="images\Table.jpg" />
     <None Remove="images\undo1.jpg" />
-    <None Remove="undo1.jpg" />
+    <None Remove="PracticePool\T021.jpg" />
+    <None Remove="PracticePool\T021_1.jpg" />
+    <None Remove="PracticePool\T021_1_bearbeitet-1.jpg" />
+    <None Remove="PracticePool\T023.jpg" />
+    <None Remove="PracticePool\T023_1.jpg" />
+    <None Remove="PracticePool\T050.jpg" />
+    <None Remove="PracticePool\T050_1.jpg" />
+    <None Remove="PracticePool\T067.jpg" />
+    <None Remove="PracticePool\T067_1.jpg" />
+    <None Remove="PracticePool\T069.jpg" />
+    <None Remove="PracticePool\T069_1.jpg" />
+    <None Remove="PracticePool\T075.jpg" />
+    <None Remove="PracticePool\T075_1.jpg" />
+    <None Remove="PracticePool\T084.jpg" />
+    <None Remove="PracticePool\T084_1.jpg" />
+    <None Remove="PracticePool\T107.jpg" />
+    <None Remove="PracticePool\T107_1.jpg" />
+    <None Remove="PracticePool\T126.jpg" />
+    <None Remove="PracticePool\T126_1.jpg" />
+    <None Remove="PracticePool\T136.jpg" />
+    <None Remove="PracticePool\T136_1.jpg" />
+    <None Remove="PracticePool\T145.jpg" />
+    <None Remove="PracticePool\T145_1.jpg" />
     <None Remove="XamarinLogo.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="images\undo1.jpg" />
-    <Content Include="undo1.jpg" />
+    <EmbeddedResource Include="images\Image1.png" />
+    <EmbeddedResource Include="images\Table.jpg" />
+    <EmbeddedResource Include="images\undo1.jpg" />
+    <EmbeddedResource Include="PracticePool\T021.jpg" />
+    <EmbeddedResource Include="PracticePool\T021_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T021_1_bearbeitet-1.jpg" />
+    <EmbeddedResource Include="PracticePool\T023.jpg" />
+    <EmbeddedResource Include="PracticePool\T023_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T050.jpg" />
+    <EmbeddedResource Include="PracticePool\T050_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T067.jpg" />
+    <EmbeddedResource Include="PracticePool\T067_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T069.jpg" />
+    <EmbeddedResource Include="PracticePool\T069_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T075.jpg" />
+    <EmbeddedResource Include="PracticePool\T075_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T084.jpg" />
+    <EmbeddedResource Include="PracticePool\T084_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T107.jpg" />
+    <EmbeddedResource Include="PracticePool\T107_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T126.jpg" />
+    <EmbeddedResource Include="PracticePool\T126_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T136.jpg" />
+    <EmbeddedResource Include="PracticePool\T136_1.jpg" />
+    <EmbeddedResource Include="PracticePool\T145.jpg" />
+    <EmbeddedResource Include="PracticePool\T145_1.jpg" />
     <Content Include="XamarinLogo.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
-    <PackageReference Include="SkiaSharp.Views" Version="1.68.1.1" />
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.60.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.657" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v9.0\Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows.Foundation.UniversalApiContract">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\References\10.0.16299.0\Windows.Foundation.UniversalApiContract\5.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="EightNineTen.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="MonkeyMoustachePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MySets.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MySkiaSharp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="MyTab.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Page1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Practice.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ScoreSheet.xaml">
